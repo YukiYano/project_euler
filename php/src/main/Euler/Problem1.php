@@ -6,7 +6,11 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
 
-class EulerProblem1 {
+namespace Euler;
+
+require_once __DIR__ . "/../../../vendor/autoload.php";
+
+class Problem1 {
 	
 	/**
 	 * check given num is multiple of muls
@@ -33,7 +37,7 @@ class EulerProblem1 {
 	public function sum_all_multiples($end, array $muls) {
 		$sum = 0;
 		for ($i = 1; $i <= $end; $i++) {
-			if (is_multiple($i, $muls)) $sum += $i;
+			if ($this->is_multiple($i, $muls)) $sum += $i;
 		}
 		return $sum;
 	}
