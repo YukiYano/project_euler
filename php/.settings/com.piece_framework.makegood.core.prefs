@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+phpunit_config_file=/project_euler_php/phpunit.xml
+preload_script=/project_euler_php/vendor/autoload.php
+test_file_pattern=
+test_folders=/project_euler_php/src/test
+testing_framework=PHPUnit
